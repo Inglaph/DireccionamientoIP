@@ -1,0 +1,41 @@
+/* -> Basic Reset  *********************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*lap : hago que el padding y el border no afecten al ancho y alto del elemento*/
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    /*lap : hereda el box-sizing de arriba*/
+}
+
+html {
+    font-size: 62.5%;
+    /*lap : 1rem = 10px; 10px/16px = 62.5% -> 16px es el tamaño por defecto de la fuente*/
+    font-family: 'Poppins', sans-serif;
+    /*lap : le doy una fuente por defecto*/
+    scroll-behavior: smooth;
+    /*lap : hago que el scroll sea suave*/
+}
+
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+/*lap : hago que las imagenes sean responsivas*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*lap : le doy un interlineado de 1.6 a los parrafos*/
+p {
+    line-height: 1.6;
+}
+
+/* <- Basic Reset  *****************************************************/
